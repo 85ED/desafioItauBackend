@@ -7,10 +7,10 @@ import lombok.Data;
 @AllArgsConstructor
 public class EstatisticaResponse {
 
-    private Long count;
-    private Double sum;
-    private Double avg;
-    private Double max;
-    private Double min;
+    private long count;
+    private double sum;
+    private double avg;
+    private double max;
+    private double min;
 
 }

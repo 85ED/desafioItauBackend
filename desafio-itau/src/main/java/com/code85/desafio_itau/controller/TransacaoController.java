@@ -16,13 +16,13 @@ public class TransacaoController {
 
     @PostMapping("/transacao")
     @ResponseStatus(HttpStatus.CREATED)
-    public void criarTransacao(@RequestBody TransacaoRequest request){
+    public void criar(@RequestBody TransacaoRequest request) {
         transacaoService.adicionar(request);
     }
 
     @DeleteMapping("/transacao")
     @ResponseStatus(HttpStatus.OK)
-    public void deletarTransacoes(){
+    public void limpar() {
         transacaoService.limpar();
     }
 }
